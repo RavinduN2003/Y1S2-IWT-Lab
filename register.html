@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> My Shopping Cart </title>
+		<link rel="stylesheet" href="./styles/register.css" />
+		
+		<script src="./js/myScript.js"></script>
+	</head>
+	
+<body>
+	<center>
+		<img class="logo" src="./images/a.png" alt="Shopping cart image" height="200px" width ="200px" />
+		<h1 class="header1">  Shopping Cart  </h1>
+		<h4 class="header2"> The online shopping store </h4>
+	</center>
+		
+	<hr class="line">
+		
+	<ul class="unlist">
+		<li class="unlist"> <a href="index.html" > Home </a> </li>
+		<li class="unlist"> <a href="news.html" > News </a> </li>
+		<li class="unlist"> <a href="#" > Contact Us</a> </li>
+		<li class="unlist"> <a href="about.php" > About Us</a> </li>
+	</ul>
+		
+	<br>
+	
+	
+	<form onsubmit= "return checkPassword()" method="POST" action="register.inc.php">
+
+		<div>
+		
+			<h4> Registration form<h4>
+			
+			<label for="fname">First Name : </label><br>
+			<input type="text" id="fname" name="fname" placeholder="First Name" required>
+			
+			<br>
+			
+			<label for="lname">Last Name : </label><br>
+			<input type="text" id="lname" name="lname" placeholder="LastName" required>
+			
+			<br>
+			
+			<label for="gender">Gender : </label><br>
+			<label for="male">Male : </label>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="female">Female : </label>
+			<input type="radio" id="female" name="gender" value="Female">
+			
+			<br>
+			
+			<label for="tele">Tele-Phone Number : </label><br>
+			<input type="text" id="tele" name="tele" placeholder="Telephone Number" required>
+			
+			<br>
+			
+			<label for="email">Email Address : </label><br>
+			<input type="email" id="email" name="email" placeholder="Email Address" required>
+			
+			<br>
+			
+			<label for="address">Home Address : </label><br>
+			<textarea id="email" name="email" placeholder="Home Address" rows="4" cols="50" required></textarea>
+			
+			<br>
+			
+			<label for="dob">Date of Birth : </label><br>
+			<label for="year">Year : </label>
+			<select id="dob" id="year" name ="year">
+				<option value="2000">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+			</select>
+			
+			<label for="month">Month : </label>
+			<select id="dob" id="month" name ="month">
+				<option value="january">january</option>
+				<option value="february">february</option>
+				<option value="march">march</option>
+				<option value="april">april</option>
+				<option value="june">june</option>
+				<option value="july">july</option>
+				<option value="september">september</option>
+				<option value="octomber">octomber</option>
+				<option value="november">november</option>
+				<option value="december">december</option>
+			</select>
+			
+			<label for="date">Month : </label>
+			<select id="dob" id="date" name ="date">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			
+			<label for="pwd">Password : </label><br>
+			<input type="password" id="pwd" name="pwd" placeholder="Password" required>
+			
+			<br>
+			
+			<label for="pwdrepeat">Re - Enter Password : </label><br>
+			<input type="password" id="pwdrepeat" name="pwdrepeat" placeholder="Re - Enter Password" required>
+			
+			<br>
+			
+			
+			<input type="checkbox" id="terms" name="terms" placeholder="terms" required onclick="enableButton()">
+			
+			<label for="terms">I Accept Privacy policy and terms!</label><br>
+			
+			<input type="submit" id="submit" placeholder="Submit" disabled>
+			
+		</div>
+	</form>
+	
+	
+	<center>
+		
+		<footer>
+			<p><b>Created by : Ravindu Nethmina </b></p>
+			<a href= "https://courseweb.sliit.lk/my/" target="_blank" > Visit Our Course </a>
+		</footer>
+	
+	</center>
+	
+	
+	
+	
+</body>
+</html>
